@@ -55,7 +55,7 @@ giving you easy access to multiple HTTP methods just by defining methods on
 your resource. A basic CRUD resource for a todo application (of course) looks
 like this: ::
 
-    from flask import Flask, request
+    from flask import Flask, Request
     from flask_restful import Resource, Api
 
     app = Flask(__name__)
