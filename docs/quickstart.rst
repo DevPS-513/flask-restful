@@ -68,7 +68,7 @@ like this: ::
             return {todo_id: todos[todo_id]}
 
         def put(self, todo_id):
-            todos[todo_id] = request.form['data']
+            todos[todo_id] = Request.form['data']
             return {todo_id: todos[todo_id]}
 
     api.add_resource(TodoSimple, '/<string:todo_id>')
